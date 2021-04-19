@@ -1,6 +1,5 @@
 <?php
-require_once('vendor/autoload.php');
-//require_once('php/autoloader.php');
+require_once('php/autoloader.php');
 
 $show_results = FALSE;
 $results_html = "";
