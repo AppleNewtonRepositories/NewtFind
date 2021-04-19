@@ -1,6 +1,5 @@
 <?php
-require_once('vendor/autoload.php');
-//require_once('php/autoloader.php');
+require_once('php/autoloader.php');
 
 $article_url = "";
 $article_html = "";
