@@ -1,4 +1,4 @@
-# FrogFind
-Source for the FrogFind search engine for vintage computers
+# NewtFind
+Source for the NewtFind (based on FrogFind project by ActionRetro) search engine for Apple Newton.
 
-Love the frog. Be the frog.
+Love the Newton. Be the Newton. Keep green!
