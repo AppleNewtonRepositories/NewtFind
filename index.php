@@ -1,5 +1,6 @@
 <?php
 require_once('vendor/autoload.php');
+//require_once('php/autoloader.php');
 
 $show_results = FALSE;
 $results_html = "";
@@ -60,16 +61,19 @@ function clean_str($str) {
 
 <html>
 <head>
-	<title>FrogFind!</title>
+	<title>NewtFind! Browse webpages on Apple Newton!</title>
 </head>
 <body>
 
 <?php if($show_results) { // there's a search query in q, so show search results ?>
 
-    <form action="/" method="get">
-    <a href="/"><font size=6 color="#008000">Frog</font><font size=6 color="#000000">Find!</font></a> Leap again: <input type="text" size="30" name="q" value="<?php echo urldecode($query) ?>">
-    <input type="submit" value="Ribbbit!">
+	<center>
+    <form action="/" method="get"><br>
+    <a href="/"><font color="#008000">Newt</font><font color="#000000">Find!</font></a><br>
+    <table><tbody><tr><td width="10%"></td><td width="80%"><input type="text" size="20" name="q" value="<?php echo urldecode($query) ?>"></td><td width="10%"></td></tr></tbody></table>
+    <table><tbody><tr><td width="42%"></td><td width="20%"><input type="submit" value="NewtIt!"></td><td width="38%"></td></tr></tbody></table>
     </form>
+	</center>
     <hr>
     <br>
     <center>Search Results for <b><?php echo strip_tags(urldecode($query)) ?></b></center>
@@ -77,16 +81,17 @@ function clean_str($str) {
     <?php echo $final_result_html ?>
     
 <?php } else { // no search query, so show new search ?>
-    <br><br><center><h1><font size=7><font color="#008000">Frog</font>Find!</font></h1></center>
-    <center><h3>The Search Engine for Vintage Computers</h3></center>
+    <br><br><center><h1><font size=7><font color="#008000">Newt</font>Find!</font></h1></center>
+    <center><h4>The Search Engine for Apple Newton devices.</h4></center>
     <br><br>
     <center>
-    <form action="/" method="get">
-    Leap to: <input type="text" size="30" name="q"><br>
-    <input type="submit" value="Ribbbit!">
+    <table><tbody><tr><td width="10%"></td><td width="80%"><form action="/" method="get"><input type="text" size="20" name="q"></td><td width="10%"></td></tr></tbody></table>
+    <table><tbody><tr><td width="42%"></td><td width="20%"><input type="submit" value="NewtIt!"></td><td width="38%"></td></tr></tbody></table>
     </center>
-    <br><br><br>
-    <small><center>Built by <b><a href="https://youtube.com/ActionRetro">Action Retro</a></b> on YouTube | <a href="about.php">Why build such a thing?</a></center><br>
+    <br>
+    <small><center>Built by <b><a href="https://youtube.com/ActionRetro">Action Retro</a></b> on YouTube | <a href="http://frogfind.com/about.php">Why build such a thing?</a></center></small>
+    <small><center>Modified by <a href="https://youtube.com/AppleNewtonFan">Apple Newton Fan</a> for Apple Newton devices,</center></small>
+    <small><center>with programming support by <a href="https://twitter.com/morgant">Morgan.</a></center></small><br>
     <small><center>Powered by DuckDuckGo</center></small>
 </form>
 </form>

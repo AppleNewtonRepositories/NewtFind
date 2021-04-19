@@ -1,10 +1,11 @@
 <?php
 require_once('vendor/autoload.php');
+//require_once('php/autoloader.php');
 
 $article_url = "";
 $article_html = "";
 $error_text = "";
-$loc = "US";
+$loc = "UK";
 
 if( isset( $_GET['loc'] ) ) {
     $loc = strtoupper($_GET["loc"]);
@@ -74,7 +75,7 @@ function clean_str($str) {
  <body>
     <p>
         <form action="/read.php" method="get">
-        <a href="/">Back to <b><font color="#008000">Frog</font><font color="000000">Find!</font></a></b> | Browsing URL: <input type="text" size="38" name="a" value="<?php echo $article_url ?>">
+        <a href="/">Back to <b><font color="#008000">Newt</font><font color="000000">Find!</font></a></b> | Browsing URL: <input type="text" size="38" name="a" value="<?php echo $article_url ?>">
         <input type="submit" value="Go!">
         </form>
     </p>
